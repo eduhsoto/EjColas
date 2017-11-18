@@ -31,7 +31,7 @@ public class Controller implements Initializable {
 
     private Nodo frente  = null;
 
- //   private Nodo ultimo;
+  private Nodo ultimo;
    // Cola cola = new Cola();
 
     @Override
@@ -53,14 +53,13 @@ public class Controller implements Initializable {
         if (frente == null){
             frente = nuevo;
         }else{
-
             Nodo temp = frente;
-           while (temp.getProximo() != null){
-              temp = temp.getProximo();
-
-            }
+           while (temp.getProximo() != null) {
+               temp = temp.getProximo();
+           }
             temp.setProx(nuevo);
         }
+
 
         mostrar();
     }
@@ -82,6 +81,7 @@ public class Controller implements Initializable {
 
                 }
                 vBox.setAlignment(Pos.CENTER);
+
 
                 Label label = new Label(String.valueOf(temp.getValor()));
                 label.setStyle("-fx-font-size:18px;");

@@ -1,8 +1,11 @@
-package sample;
+/*package sample;
+
+import javax.xml.soap.Node;
 
 public class Cola {
 
     private Nodo frente;//El inicio de la cola
+
     //Contructor simple
     public Cola() {
         this.frente = null;
@@ -11,12 +14,12 @@ public class Cola {
     //Método para insertar siguiente elemento (nodo), el elemento debe colocarse detrás del último nodo
     public void insertar(int valor) {
         Nodo nuevo = new Nodo(valor);
-        if(frente == null) {
+        if (frente == null) {
             frente = nuevo;
-        }else {
+        } else {
 
             Nodo temp = frente;
-            while(temp.getProximo()!=null) {
+            while (temp.getProximo() != null) {
                 temp = temp.getProximo();
             }
             temp.setProx(nuevo);
@@ -24,18 +27,25 @@ public class Cola {
     }
 
     //Método para mostrar los elementos de la cola
-    public void mostrar() {
-        if(frente !=null) {
+    public Object mostrar() {
+        if (frente != null) {
             Nodo temp = frente;
-            System.out.println("Los valores de la cola son:");
-            while(temp !=null) {
-                System.out.println(temp.getValor());
+            //System.out.println("Los valores de la cola son:");
+            while (temp != null) {
+                //System.out.println(temp.getValor());
+
                 temp = temp.getProximo();
             }
-        }else {
-            System.out.println("La cola está vacía.");
+        } else {
+          return   System.out.printf("La cola está vacía.");
         }
+
+        return null;
     }
+
+
+
+
 
     //Método para extraer el elemento del frente
     public int extraer() {
@@ -49,3 +59,4 @@ public class Cola {
         }
     }
 }
+*/

@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-<<<<<<< HEAD
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-=======
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cola/sample/Controller.class" afterPath="$PROJECT_DIR$/out/production/Cola/sample/Controller.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Controller.java" afterPath="$PROJECT_DIR$/src/sample/Controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/sample.fxml" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" />
->>>>>>> origin/Desarrollador3
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,33 +66,18 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="17">
-              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-              <folding />
-=======
             <state relative-caret-position="119">
               <caret line="119" column="41" lean-forward="true" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
               <folding>
                 <element signature="e#5663#5664#0" expanded="true" />
                 <element signature="e#5722#5723#0" expanded="true" />
               </folding>
->>>>>>> origin/Desarrollador3
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-<<<<<<< HEAD
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-=======
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="365">
               <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="26" />
@@ -104,56 +85,10 @@
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
->>>>>>> origin/Desarrollador3
             <state />
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3689">
-              <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-              <folding>
-                <marker date="1511147619054" expanded="true" signature="50568:50793" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="50568:50897" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="50568:50912" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="50569:50775" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="50848:50884" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="50947:53094" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="50960:53079" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51014:51309" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51033:51294" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51096:51274" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51136:51240" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51157:51218" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51359:51686" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51378:51671" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51473:51651" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51513:51617" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51534:51595" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51737:52002" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51756:51987" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51789:51967" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51829:51933" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="51850:51911" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52045:52351" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52064:52336" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52138:52316" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52178:52282" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52199:52260" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52402:52748" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52421:52733" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52496:52713" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52536:52679" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52557:52657" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52800:53065" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52819:53050" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52852:53030" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52892:52996" ph="..." />
-                <marker date="1511147619054" expanded="true" signature="52913:52974" ph="..." />
-=======
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -163,25 +98,16 @@
                 <element signature="imports" expanded="false" />
                 <element signature="e#589#590#0" expanded="false" />
                 <element signature="e#617#618#0" expanded="false" />
->>>>>>> origin/Desarrollador3
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="Cola.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Cola.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-=======
       <file leaf-file-name="Nodo.class" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/production/Cola/sample/Nodo.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
->>>>>>> origin/Desarrollador3
               <folding />
             </state>
           </provider>
@@ -232,14 +158,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
-    <option name="x" value="-8" />
-    <option name="width" value="1376" />
-    <option name="height" value="744" />
-=======
     <option name="width" value="683" />
     <option name="height" value="728" />
->>>>>>> origin/Desarrollador3
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -260,39 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Cola" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cola" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cola" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cola" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cola" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cola" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cola" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cola" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sample" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-=======
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
@@ -329,7 +216,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
->>>>>>> origin/Desarrollador3
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -744,8 +630,6 @@
       <properties />
       <listeners />
     </configuration>
-<<<<<<< HEAD
-=======
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <method />
     </configuration>
@@ -787,7 +671,6 @@
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
     </list>
->>>>>>> origin/Desarrollador3
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -817,33 +700,18 @@
     <option name="totallyTimeSpent" value="17256000" />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-8" y="0" width="1376" height="744" extended-state="0" />
-=======
     <frame x="0" y="0" width="683" height="728" extended-state="0" />
->>>>>>> origin/Desarrollador3
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-=======
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
->>>>>>> origin/Desarrollador3
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31045753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3176292" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-=======
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31045753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -852,7 +720,6 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1172466" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
->>>>>>> origin/Desarrollador3
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -893,17 +760,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> origin/Desarrollador3
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -979,14 +835,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-<<<<<<< HEAD
-          <folding />
-=======
           <folding>
             <element signature="e#5663#5664#0" expanded="true" />
             <element signature="e#5722#5723#0" expanded="true" />
           </folding>
->>>>>>> origin/Desarrollador3
         </state>
       </provider>
     </entry>
@@ -1001,14 +853,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-<<<<<<< HEAD
-          <folding />
-=======
           <folding>
             <element signature="e#5663#5664#0" expanded="true" />
             <element signature="e#5722#5723#0" expanded="true" />
           </folding>
->>>>>>> origin/Desarrollador3
         </state>
       </provider>
     </entry>
@@ -1055,14 +903,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-<<<<<<< HEAD
-          <folding />
-=======
           <folding>
             <element signature="e#5663#5664#0" expanded="true" />
             <element signature="e#5722#5723#0" expanded="true" />
           </folding>
->>>>>>> origin/Desarrollador3
         </state>
       </provider>
     </entry>
@@ -1109,14 +953,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-<<<<<<< HEAD
-          <folding />
-=======
           <folding>
             <element signature="e#5663#5664#0" expanded="true" />
             <element signature="e#5722#5723#0" expanded="true" />
           </folding>
->>>>>>> origin/Desarrollador3
         </state>
       </provider>
     </entry>
@@ -1174,14 +1014,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-<<<<<<< HEAD
-          <folding />
-=======
           <folding>
             <element signature="e#5663#5664#0" expanded="true" />
             <element signature="e#5722#5723#0" expanded="true" />
           </folding>
->>>>>>> origin/Desarrollador3
         </state>
       </provider>
     </entry>
@@ -1206,14 +1042,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-<<<<<<< HEAD
-          <folding />
-=======
           <folding>
             <element signature="e#5663#5664#0" expanded="true" />
             <element signature="e#5722#5723#0" expanded="true" />
           </folding>
->>>>>>> origin/Desarrollador3
         </state>
       </provider>
     </entry>
@@ -1251,23 +1083,11 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> origin/Desarrollador3
     <entry file="file://$PROJECT_DIR$/src/sample/Imagenes/hombre.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-<<<<<<< HEAD
-=======
     <entry file="file://$PROJECT_DIR$/src/sample/Cola.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -1275,7 +1095,6 @@
         </state>
       </provider>
     </entry>
->>>>>>> origin/Desarrollador3
     <entry file="file://$PROJECT_DIR$/src/sample/Nodo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1285,61 +1104,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/Cola/sample/Nodo.class">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="408">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-=======
         <state relative-caret-position="119">
           <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
->>>>>>> origin/Desarrollador3
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3689">
-          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
-          <folding>
-            <marker date="1511147619054" expanded="true" signature="50568:50793" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="50568:50897" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="50568:50912" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="50569:50775" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="50848:50884" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="50947:53094" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="50960:53079" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51014:51309" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51033:51294" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51096:51274" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51136:51240" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51157:51218" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51359:51686" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51378:51671" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51473:51651" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51513:51617" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51534:51595" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51737:52002" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51756:51987" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51789:51967" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51829:51933" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="51850:51911" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52045:52351" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52064:52336" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52138:52316" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52178:52282" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52199:52260" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52402:52748" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52421:52733" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52496:52713" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52536:52679" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52557:52657" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52800:53065" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52819:53050" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52852:53030" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52892:52996" ph="..." />
-            <marker date="1511147619054" expanded="true" signature="52913:52974" ph="..." />
-=======
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1348,21 +1118,11 @@
             <element signature="imports" expanded="false" />
             <element signature="e#589#590#0" expanded="false" />
             <element signature="e#617#618#0" expanded="false" />
->>>>>>> origin/Desarrollador3
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-<<<<<<< HEAD
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-=======
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="26" />
@@ -1370,24 +1130,17 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
->>>>>>> origin/Desarrollador3
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="17">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
-=======
         <state relative-caret-position="119">
           <caret line="119" column="41" lean-forward="true" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
           <folding>
             <element signature="e#5663#5664#0" expanded="true" />
             <element signature="e#5722#5723#0" expanded="true" />
           </folding>
->>>>>>> origin/Desarrollador3
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">

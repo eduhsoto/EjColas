@@ -23,10 +23,13 @@ public class Controller implements Initializable {
     HBox contenedor;
 
     @FXML
+    Label TamañoLab;
+
+    @FXML
     TextField txtNumber, txtBuscar;
 
     @FXML
-    Button addBtn, buscarBtn, borrarBtn;
+    Button addBtn, buscarBtn, borrarBtn, tamañoBtn, vaciarBtn;
 
     private int index = 0;
     private Nodo frente  = null;
@@ -57,6 +60,16 @@ public class Controller implements Initializable {
             public void handle(ActionEvent event) {
                 extraer();
             }
+        });
+
+        this.tamañoBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {tamaño();}
+        });
+
+        this.vaciarBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {vaciar ();}
         });
 
     }
@@ -115,11 +128,11 @@ public class Controller implements Initializable {
         contenedor.getChildren().clear();
         Nodo temp = frente;
         if (frente == null){
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Practica Colas");
-            alert.setHeaderText("La cola está vacía.");
-            alert.setContentText("Intentalo más tarde...");
-            alert.showAndWait();
+            Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
+            alert1.setTitle("Practica Colas");
+            alert1.setHeaderText("La cola está vacía.");
+            alert1.setContentText("Intentalo más tarde...");
+            alert1.showAndWait();
         }else{
             for (int x= 0; x<index; x++){
                 HBox hBox = new HBox();
@@ -167,5 +180,18 @@ public class Controller implements Initializable {
             index--;
             mostrar();
         }
+    }
+
+    //Método para obtener tamaño
+    public void tamaño(){
+        System.out.println("Tamaño: " + index);
+         }
+
+
+    //Método para vaciar Cola
+    public void   vaciar() {
+        frente = null;
+        index = 0;
+        mostrar ();
     }
 }

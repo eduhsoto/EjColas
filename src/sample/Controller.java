@@ -23,175 +23,157 @@ public class Controller implements Initializable {
     HBox contenedor;
 
     @FXML
-    Label TamañoLab;
+    Label lblSize, lblQuit;
 
     @FXML
-    TextField txtNumber, txtBuscar;
+    TextField txtNumber, txtBuscar, txtSize;
 
     @FXML
-    Button addBtn, buscarBtn, borrarBtn, tamañoBtn, vaciarBtn;
+    Button addBtn, buscarBtn, borrarBtn;
 
-    private int index = 0;
-    private Nodo frente  = null;
+    Cola cola = new Cola();
 
-  private Nodo ultimo;
-   // Cola cola = new Cola();
+    private boolean press = false;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-
         this.addBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                insertar();
+
+                if (!error()) {
+                    return;
+                }
+
+                cola.insertar(Integer.parseInt(txtNumber.getText()) );
+                mostrar();
+                txtNumber.clear();
+                lblSize.setText("El tamaño de la cola " +cola.getIndex());
+                if (cola.getIndex() == Integer.parseInt(txtNumber.getText())){
+                    System.out.println("dewfsd");
+                }
+
+                // insertar();
             }
         });
 
         this.buscarBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                press = true;
                 buscar();
+
             }
         });
 
         this.borrarBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                extraer();
+                cola.extraer();
+                mostrar();
+
             }
         });
-
-        this.tamañoBtn.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {tamaño();}
-        });
-
-        this.vaciarBtn.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {vaciar ();}
-        });
-
     }
 
-    public void insertar(){
-        int valor = Integer.parseInt(txtNumber.getText());
-        Nodo nuevo = new Nodo(valor);
-        if (frente == null){
-            frente = nuevo;
-        }else{
-            Nodo temp = frente;
-           while (temp.getProximo() != null) {
-               temp = temp.getProximo();
-           }
-            temp.setProx(nuevo);
+    public boolean error() {
+        if (txtNumber.getText().equals("")) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("No deje espacio en blanco");
+            alert.setHeaderText(null);
+            alert.setContentText("Inserte un valor");
+            alert.showAndWait();
+
+            return false;
+
         }
-        index++;
-        mostrar();
+        return true;
     }
 
-    public void mostrar(){
-      //if (frente != null){
-            contenedor.getChildren().clear();
-            Nodo temp = frente;
-
-            //while(temp!=null) { //existe otra forma para mostrar los valores de la cola
-            for (int x= 0; x<index; x++){
-                HBox hBox = new HBox();
-                VBox vBox = new VBox();
-                ImageView hombre = null;
-                try {
-                    File archivo = new File("src/sample/Imagenes/hombre.png");
-                    Image image = new Image(archivo.toURI().toURL().toString());
-                    hombre = new ImageView(image);
-
-                } catch (Exception e) {
-
-                }
-                vBox.setAlignment(Pos.CENTER);
 
 
-                Label label = new Label(String.valueOf(temp.getValor()));
-                label.setStyle("-fx-font-size:18px;");
-                hBox.getChildren().add(vBox);
-                vBox.getChildren().add(label);
-                if (hombre != null) vBox.getChildren().add(hombre);
-                contenedor.getChildren().add(hBox);
-                temp = temp.getProximo();
+    public void mostrar() {
+        contenedor.getChildren().clear();
+        Nodo temp =cola.frente;
+        while(temp!=null) {
+            HBox hBox = new HBox();
+            VBox vBox = new VBox();
+            ImageView hombre = null;
+            Label lb = new Label(temp.getValor()+"");
+            try {
+                File archivo = new File("src/sample/Imagenes/hombre.png");
+                Image image = new Image(archivo.toURI().toURL().toString());
+                hombre = new ImageView(image);
+
+
+            } catch (Exception e) {
+
             }
-        //}
-
+            vBox.setAlignment(Pos.CENTER);
+            hBox.getChildren().add(vBox);
+            vBox.getChildren().addAll(lb);
+            if (hombre != null){
+                vBox.getChildren().add(hombre);
+            }
+            contenedor.getChildren().addAll(hBox);
+            temp=temp.getProximo();
+        }
     }
 
-    //Método para búscar en la cola
     public void buscar(){
         contenedor.getChildren().clear();
-        Nodo temp = frente;
-        if (frente == null){
-            Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
-            alert1.setTitle("Practica Colas");
-            alert1.setHeaderText("La cola está vacía.");
-            alert1.setContentText("Intentalo más tarde...");
-            alert1.showAndWait();
-        }else{
-            for (int x= 0; x<index; x++){
-                HBox hBox = new HBox();
-                VBox vBox = new VBox();
-                ImageView mujer = null;
-                try {
-                    File archivo = new File("src/sample/Imagenes/hombre.png");
-                    Image image = new Image(archivo.toURI().toURL().toString());
-                    mujer = new ImageView(image);
+        Nodo temp =cola.frente;
+        while(temp!=null) {
+            HBox hBox = new HBox();
+            VBox vBox = new VBox();
+            ImageView hombre = null;
+            Label lb = new Label(temp.getValor()+"");
 
-                } catch (Exception e) {
-
-                }
-                vBox.setAlignment(Pos.CENTER);
+            try {
+                File archivo = new File("src/sample/Imagenes/hombre.png");
+                Image image = new Image(archivo.toURI().toURL().toString());
+                hombre = new ImageView(image);
 
 
-                Label cola = new Label(String.valueOf(temp.getValor()));
-                cola.setStyle("-fx-font-size:18px;");
-                if (String.valueOf(temp.getValor()).equals(txtBuscar.getText())){
-                    cola.setStyle("-fx-background-color: #0ff");
-                }
-                hBox.getChildren().add(vBox);
-                vBox.getChildren().add(cola);
-                if (mujer != null){
-                    vBox.getChildren().add(mujer);
-                }
-                contenedor.getChildren().add(hBox);
-                temp = temp.getProximo();
+            } catch (Exception e) {
+
             }
 
+            vBox.setAlignment(Pos.CENTER);
+            hBox.getChildren().add(vBox);
+            vBox.getChildren().addAll(lb);
+            if (hombre != null){
+                vBox.getChildren().add(hombre);
+            }
+            if (press !=false) {
+                if (temp.getValor() == Integer.parseInt(txtBuscar.getText())) {
+                    lb.setStyle("-fx-font-size:20px;" + "-fx-font-family: Comic Sans MS;");
+                    vBox.getChildren().addAll(insertArrow());
+                }
+            }
+            contenedor.getChildren().addAll(hBox);
+            temp=temp.getProximo();
         }
     }
 
-    //Método para eliminar elemento de la cola
-    public void extraer() {
-        if(frente == null) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Practica Colas");
-            alert.setHeaderText("La cola está vacía.");
-            alert.setContentText("Intentalo más tarde...");
-            alert.showAndWait();
-        }else {
-            int valorExtraer = frente.getValor();//Variable temporal
-            frente = frente.getProximo();//Cambiar el frente por el siguiente
-            index--;
-            mostrar();
+    public VBox insertArrow(){
+        VBox vBox = new VBox();
+        ImageView flecha = null;
+        try {
+                File archivo = new File("src/sample/Imagenes/flecha.png");
+                Image image = new Image(archivo.toURI().toURL().toString());
+                flecha = new ImageView(image);
+        } catch (Exception e) {
+
         }
-    }
-
-    //Método para obtener tamaño
-    public void tamaño(){
-        System.out.println("Tamaño: " + index);
-         }
-
-
-    //Método para vaciar Cola
-    public void   vaciar() {
-        frente = null;
-        index = 0;
-        mostrar ();
+        vBox.setAlignment(Pos.CENTER);
+        if (flecha != null) {
+            vBox.getChildren().add(flecha);
+        }
+        return vBox;
     }
 }
+
+
+

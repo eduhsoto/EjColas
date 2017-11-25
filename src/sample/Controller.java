@@ -26,72 +26,95 @@ public class Controller implements Initializable {
     Label lblSize, lblQuit;
 
     @FXML
-    TextField txtNumber, txtBuscar, txtSize;
+    TextField txtNumber, txtBuscar;
 
     @FXML
-    Button addBtn, buscarBtn, borrarBtn;
+    Button btnAdd, btnSearch, btnDelete, btnEmpty;
 
     Cola cola = new Cola();
 
-    private boolean press = false;
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
-        this.addBtn.setOnAction(new EventHandler<ActionEvent>() {
+        this.btnAdd.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+               errorInsert();
+               lblQuit.setVisible(false);
+            }
+        });
 
-                if (!error()) {
-                    return;
-                }
+        this.btnSearch.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+             errorSearch();
+             lblQuit.setVisible(false);
+            }
+        });
 
-                cola.insertar(Integer.parseInt(txtNumber.getText()) );
+        this.btnDelete.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                lblQuit.setVisible(true);
+                quitQueue();
                 mostrar();
-                txtNumber.clear();
-                lblSize.setText("El tamaño de la cola " +cola.getIndex());
-                if (cola.getIndex() == Integer.parseInt(txtNumber.getText())){
-                    System.out.println("dewfsd");
-                }
-
-                // insertar();
+                sizeQueue();
             }
         });
 
-        this.buscarBtn.setOnAction(new EventHandler<ActionEvent>() {
+        this.btnEmpty.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                press = true;
-                buscar();
-
-            }
-        });
-
-        this.borrarBtn.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                cola.extraer();
+                cola.vaciar();
                 mostrar();
-
+                sizeQueue();
+                lblQuit.setVisible(false);
             }
         });
+
     }
 
-    public boolean error() {
-        if (txtNumber.getText().equals("")) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("No deje espacio en blanco");
-            alert.setHeaderText(null);
-            alert.setContentText("Inserte un valor");
-            alert.showAndWait();
+    public void quitQueue(){
+        lblQuit.setText("Valor extraído: " + cola.extraer());
+        lblQuit.setStyle("-fx-font-size:22px;" + "-fx-font-family: Comic Sans MS;");
+    }
 
+    public void sizeQueue(){
+        lblSize.setText("Tamaño: " +cola.getIndex());
+        lblSize.setStyle("-fx-font-size:22px;" + "-fx-font-family: Comic Sans MS;");
+    }
+
+    public boolean errorInsert() {
+        if (txtNumber.getText().equals("")) {
+           errorEmpty();
             return false;
 
         }
+        cola.insertar(Integer.parseInt(txtNumber.getText()));
+        mostrar();
+        txtNumber.clear();
+        sizeQueue();
         return true;
     }
 
+    public boolean errorSearch() {
+        if (txtBuscar.getText().equals("")) {
+            errorEmpty();
+            return false;
 
+        }
+        buscar();
+        txtBuscar.clear();
+        return true;
+    }
+
+    public void errorEmpty(){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("No deje espacio en blanco");
+        alert.setHeaderText(null);
+        alert.setContentText("Inserte un valor");
+        alert.showAndWait();
+
+    }
 
     public void mostrar() {
         contenedor.getChildren().clear();
@@ -101,6 +124,7 @@ public class Controller implements Initializable {
             VBox vBox = new VBox();
             ImageView hombre = null;
             Label lb = new Label(temp.getValor()+"");
+            lb.setStyle("-fx-font-size:15px;" + "-fx-font-family: Comic Sans MS;");
             try {
                 File archivo = new File("src/sample/Imagenes/hombre.png");
                 Image image = new Image(archivo.toURI().toURL().toString());
@@ -129,6 +153,7 @@ public class Controller implements Initializable {
             VBox vBox = new VBox();
             ImageView hombre = null;
             Label lb = new Label(temp.getValor()+"");
+            lb.setStyle("-fx-font-size:15px;" + "-fx-font-family: Comic Sans MS;");
 
             try {
                 File archivo = new File("src/sample/Imagenes/hombre.png");
@@ -146,12 +171,11 @@ public class Controller implements Initializable {
             if (hombre != null){
                 vBox.getChildren().add(hombre);
             }
-            if (press !=false) {
+
                 if (temp.getValor() == Integer.parseInt(txtBuscar.getText())) {
                     lb.setStyle("-fx-font-size:20px;" + "-fx-font-family: Comic Sans MS;");
                     vBox.getChildren().addAll(insertArrow());
                 }
-            }
             contenedor.getChildren().addAll(hBox);
             temp=temp.getProximo();
         }

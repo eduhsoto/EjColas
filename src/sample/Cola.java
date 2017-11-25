@@ -2,17 +2,14 @@ package sample;
 
 import javafx.scene.control.Alert;
 
-import javax.xml.soap.Node;
-
 public class Cola {
 
-
     public   Nodo frente;//El inicio de la cola
-    private int index;
+    private int index;//Declaramos una variable para determinar el tamaño
 
-    //Contructor simple
-
+    //Contructor
     public Cola() {
+        //Valores iniciales de las variables antes declaradas
         this.frente = null;
         this.index = 0;
     }
@@ -27,7 +24,7 @@ public class Cola {
 
 
     //Método para insertar siguiente elemento (nodo), el elemento debe colocarse detrás del último nodo
-    public void insertar(int valor) {
+    public void insertar(int valor){
         Nodo nuevo = new Nodo(valor);
         if (isVacia()) {
             frente = nuevo;
@@ -52,6 +49,7 @@ public class Cola {
     //Método para extraer el elemento del frente
     public int extraer() {
         if(isVacia()) {
+            vaciaError();
             return 0;
         }else {
             int valorExtraer = frente.getValor();//Variable temporal
@@ -65,13 +63,14 @@ public class Cola {
 
     }
 
-    public void   vaciar() {
-        frente = null;
-        index = 0;
-        // mostrar ();
+    public void vaciar() {
+        if (isVacia()){
+         vaciaError();
+        }else {
+            frente = null;
+            index = 0;
+        }
     }
-
-
 
     public void vaciaError(){
         Alert alert1 = new Alert(Alert.AlertType.INFORMATION);

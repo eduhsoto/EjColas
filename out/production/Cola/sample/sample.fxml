@@ -10,36 +10,41 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-   <children>
-      <TextField fx:id="txtNumber" layoutX="26.0" layoutY="26.0" style="-fx-background-radius: 20;" />
-      <TextField fx:id="txtBuscar" layoutX="26.0" layoutY="77.0" promptText="Ingresa tu búsqueda" style="-fx-background-radius: 20;" />
-      <Button fx:id="btnAdd" defaultButton="true" layoutX="197.0" layoutY="26.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="Insertar">
-         <font>
-            <Font name="Arial Black" size="12.0" />
-         </font></Button>
-      <Button fx:id="btnSearch" layoutX="196.0" layoutY="77.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-radius: 20;" text="Búscar">
-         <font>
-            <Font name="Arial Black" size="12.0" />
-         </font></Button>
-      <Button fx:id="btnDelete" layoutX="196.0" layoutY="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-radius: 20;" text="Borrar">
-         <font>
-            <Font name="Arial Black" size="12.0" />
-         </font></Button>
-      <ScrollPane layoutX="296.0" layoutY="26.0" prefHeight="137.0" prefWidth="416.0">
-         <content>
-            <HBox fx:id="contenedor" prefHeight="135.0" prefWidth="414.0" spacing="5.0">
-               <padding>
-                  <Insets left="10.0" />
-               </padding></HBox>
-         </content>
-      </ScrollPane>
-      <Label fx:id="lblSize" layoutX="26.0" layoutY="218.0" prefHeight="17.0" prefWidth="239.0" />
-      <Label fx:id="lblQuit" layoutX="504.0" layoutY="218.0" prefHeight="17.0" prefWidth="207.0" />
-      <Button fx:id="btnEmpty" layoutX="204.0" layoutY="175.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="Vaciar">
-         <font>
-            <Font name="Arial Black" size="12.0" />
-         </font></Button>
-      <Separator layoutX="273.0" orientation="VERTICAL" prefHeight="257.0" prefWidth="4.0" />
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="383.0" prefWidth="740.0" style="-fx-background-color: #455A64;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TextField fx:id="txtNumber" layoutX="17.0" layoutY="122.0" style="-fx-background-radius: 20;" />
+        <TextField fx:id="txtBuscar" layoutX="17.0" layoutY="173.0" promptText="Ingresa tu búsqueda" style="-fx-background-radius: 20;" />
+        <Button fx:id="btnAdd" defaultButton="true" layoutX="188.0" layoutY="122.0" mnemonicParsing="false" opacity="0.74" style="-fx-background-radius: 20; -fx-background-color: #B9F6CA;" text="Insertar">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font></Button>
+        <Button fx:id="btnSearch" layoutX="187.0" layoutY="173.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-radius: 20; -fx-background-color: #B9F6CA;" text="Búscar">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font></Button>
+        <Button fx:id="btnDelete" layoutX="560.0" layoutY="323.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-radius: 20; -fx-background-color: #B9F6CA;" text="Borrar">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font></Button>
+        <ScrollPane layoutX="301.0" layoutY="135.0" prefHeight="137.0" prefWidth="416.0">
+            <content>
+                <HBox fx:id="contenedor" prefHeight="135.0" prefWidth="414.0" spacing="5.0">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding></HBox>
+            </content>
+        </ScrollPane>
+        <Label fx:id="lblSize" alignment="CENTER_RIGHT" layoutX="477.0" layoutY="93.0" prefHeight="17.0" prefWidth="239.0" textFill="WHITE" />
+        <Label fx:id="lblQuit" layoutX="24.0" layoutY="327.0" prefHeight="17.0" prefWidth="207.0" textFill="WHITE" />
+        <Button fx:id="btnEmpty" layoutX="362.0" layoutY="323.0" mnemonicParsing="false" style="-fx-background-radius: 20; -fx-background-color: #B9F6CA;" text="Vaciar">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font></Button>
+        <Separator layoutX="274.0" layoutY="78.0" orientation="VERTICAL" prefHeight="320.0" prefWidth="2.0" />
+        <Separator layoutX="2.0" layoutY="77.0" prefHeight="4.0" prefWidth="750.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="26.0" prefHeight="17.0" prefWidth="679.0" style="-fx-text-fill: white;" text="Proyecto Colas">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+    </children>
 </AnchorPane>

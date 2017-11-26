@@ -79,12 +79,12 @@ public class Controller implements Initializable {
 
     public void quitQueue(){//Método para mostrar el valor extraido en un label
         lblQuit.setText("Valor extraído: " + cola.extraer());
-        lblQuit.setStyle("-fx-font-size:22px;" + "-fx-font-family: Comic Sans MS;");
+        lblQuit.setStyle("-fx-font-size:18px;" + "-fx-font-family: Comic Sans MS;");
     }
 
     public void sizeQueue(){//Método para mostrar el tamaño de la cola en un label
         lblSize.setText("Tamaño: " +cola.getIndex());
-        lblSize.setStyle("-fx-font-size:22px;" + "-fx-font-family: Comic Sans MS;");
+        lblSize.setStyle("-fx-font-size:18px;" + "-fx-font-family: Comic Sans MS;");
     }
 
     //En caso de que el usuario haya dejado el campo vacío, se le informa
@@ -165,7 +165,7 @@ public class Controller implements Initializable {
             VBox vBox = new VBox();
             ImageView hombre = null;
             Label lb = new Label(temp.getValor()+"");
-            lb.setStyle("-fx-font-size:15px;" + "-fx-font-family: Comic Sans MS;");
+            lb.setStyle("-fx-font-size:14px;" + "-fx-font-family: Comic Sans MS;");
 
             try {
                 File archivo = new File("src/sample/Imagenes/hombre.png");

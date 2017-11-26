@@ -14,14 +14,10 @@ public class Cola {
         this.index = 0;
     }
 
-    public int getIndex() {
-        return index;
-    }
+    public boolean isVacia(){
+        return (frente == null);
 
-    public void setIndex(int index) {
-        this.index = index;
     }
-
 
     //Método para insertar siguiente elemento (nodo), el elemento debe colocarse detrás del último nodo
     public void insertar(int valor){
@@ -29,22 +25,20 @@ public class Cola {
         if (isVacia()) {
             frente = nuevo;
         } else {
-
             Nodo temp = frente;
             while (temp.getProximo() != null) {
                 temp = temp.getProximo();
             }
             temp.setProx(nuevo);
         }
-        index++;
+        index++;//Va incrementando el tamaño, una vez insertado un elemento
 
     }
 
-    public boolean isVacia(){
-     return (frente == null);
-
+    //Obtener el tamaño de la cola
+    public int getIndex() {
+        return index;
     }
-
 
     //Método para extraer el elemento del frente
     public int extraer() {
@@ -58,11 +52,10 @@ public class Cola {
             index--;
 
            return valorExtraer; //Devolver el valor extraido de la cola
-
         }
-
     }
 
+    //Vacía la cola
     public void vaciar() {
         if (isVacia()){
          vaciaError();
@@ -72,6 +65,7 @@ public class Cola {
         }
     }
 
+    //En caso de que la lista este vacía llama al método vaciarError
     public void vaciaError(){
         Alert alert1 = new Alert(Alert.AlertType.INFORMATION);
         alert1.setTitle("Practica Colas");
